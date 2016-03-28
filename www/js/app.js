@@ -49,7 +49,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
+.state('tab.bio', {
+    url: '/bio',
+    views: {
+      'tab-bio': {
+        templateUrl: 'templates/tab-bio.html',
+        controller: 'BioCtrl'
+      }
+    }
+  })
+.state('bookings', {
+    url: '/bookings',
+    views: {
+      'bookings': {
+        templateUrl: 'templates/bookings.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
   .state('tab.chats', {
       url: '/chats',
       views: {
