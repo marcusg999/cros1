@@ -1,1 +1,13 @@
 /* Empty. Add your own CSS if you like */
+.pane {
+    background:url("../img/cros1art.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 80%;
+    height: 246px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
