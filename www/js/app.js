@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-bio': {
         templateUrl: 'templates/tab-bio.html',
-        controller: 'BioCtrl'
+        controller: 'DashCtrl'
       }
     }
   })
