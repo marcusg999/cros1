@@ -62,7 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/bookings',
     views: {
       'bookings': {
-        templateUrl: 'templates/bookings.html',
+        templateUrl: 'templates/tab-bookings.html',
         controller: 'DashCtrl'
       }
     }
