@@ -58,10 +58,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-.state('bookings', {
+.state('tab.bookings', {
     url: '/bookings',
     views: {
-      'bookings': {
+      'tab.bookings': {
         templateUrl: 'templates/tab-bookings.html',
         controller: 'DashCtrl'
       }
