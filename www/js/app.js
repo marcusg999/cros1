@@ -54,24 +54,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-bio': {
         templateUrl: 'templates/tab-bio.html',
-        controller: 'DashCtrl'
+        controller: 'BioCtrl'
       }
     }
   })
-.state('tab.bookings', {
-    url: '/bookings',
-    views: {
-      'tab.bookings': {
-        templateUrl: 'templates/tab-bookings.html',
-        controller: 'DashCtrl'
-      }
-    }
-  })
-  .state('tab.chats', {
-      url: '/chats',
+
+  .state('tab.bookings', {
+      url: '/bookings',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
+        'tab-bookings': {
+          templateUrl: 'templates/tab-bookings.html',
           controller: 'ChatsCtrl'
         }
       }
