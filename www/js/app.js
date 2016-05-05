@@ -49,34 +49,37 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-.state('tab.bio', {
-    url: '/bio',
-    views: {
-      'tab-bio': {
-        templateUrl: 'templates/tab-bio.html',
-        controller: 'BioCtrl'
-      }
-    }
-  })
 
   .state('tab.bookings', {
       url: '/bookings',
       views: {
         'tab-bookings': {
           templateUrl: 'templates/tab-bookings.html',
-          controller: 'ChatsCtrl'
+
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
+
+  .state('tab.bio', {
+    url: '/bio',
+    views: {
+      'tab-bio': {
+        templateUrl: 'templates/tab-bio.html',
+
       }
-    })
+    }
+  })
+
+.state('tab.TourInfo', {
+    url: '/TourInfo',
+    views: {
+      'tab-TourInfo': {
+        templateUrl: 'templates/tab-TourInfo.html',
+
+      }
+    }
+  })
+
   .state('tab.account', {
     url: '/account',
     views: {
