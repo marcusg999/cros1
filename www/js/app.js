@@ -79,7 +79,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+.state('tab.cart', {
+    url: '/cart',
+    views: {
+      'tab-cart': {
+        templateUrl: 'templates/tab-cart.html',
 
+      }
+    }
+  })
   .state('tab.account', {
     url: '/account',
     views: {
