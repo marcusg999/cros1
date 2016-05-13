@@ -6,6 +6,10 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var request = require('request');
+var cheerio = require('cheerio');
+
+
 
 var paths = {
   sass: ['./scss/**/*.scss']
