@@ -1,16 +1,14 @@
-var request = require('request'),
-    cheerio = require('cheerio'),
-    urls = [];
+var request = require('request');
+var cheerio = require('cheerio');
 
-request('https://www.reverbnation.com/1875127/shows?class=prev&page=1&past=false', function(err, resp, body){
-    if(!err && resp.statusCode == 200){
-        var $ = cheerio.load(body);
-        $('a.profile_backpage_shows_container', '#page_contents').each(function(){
-            var url = this.attr('data-url);
-            urls.push(url);
+var target = "https://www.reverbnation.com/1875127/shows?class=prev&page=1&past=false"
+
+request(target, function(err, response, body){
+    if(!err && response.statusCode == 200){
+        $ = cheerio.load(body);
+        $("article.profile_backpage_shows_container", "#page_contents").each(function(article){
+          console.log(article);
 
         });
-        console.log(url);
     }
-
 })
